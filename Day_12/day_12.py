@@ -5,11 +5,14 @@ Directions = [[-1, 0], [0, 1], [1, 0], [0, -1]]
 
 def read_garden(file_name):
     garden = []
+
     with open(file_name, 'r') as file:
         lines = file.readlines()
+
         for line in lines:
             line = line.strip()
             garden.append(list(line))
+
     return garden
 
 
