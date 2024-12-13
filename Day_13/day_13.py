@@ -60,11 +60,11 @@ def calculate_tokens(buttons_a, buttons_b, prizes):
 buttons_a, buttons_b, prizes = read_data('input.txt')
 
 fewest_tokens = calculate_tokens(buttons_a, buttons_b, prizes)
-print(f'Tokens: {fewest_tokens}')
+print(f'Fewest tokens: {fewest_tokens}')
 
 for i in range(len(prizes)):
     prizes[i][0] += 10000000000000
     prizes[i][1] += 10000000000000
 
 error_tokens = calculate_tokens(buttons_a, buttons_b, prizes)
-print(f'Tokens: {error_tokens}')
+print(f'Unit conversion correction tokens: {error_tokens}')
